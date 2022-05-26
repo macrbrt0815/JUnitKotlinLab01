@@ -3,7 +3,7 @@ package creational.factory
 import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Test
 
-class FactoryTest {
+class TestFactory {
     private val robotFactory = RobotFactory()
 
     @Test

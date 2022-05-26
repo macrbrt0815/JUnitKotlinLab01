@@ -3,9 +3,11 @@ package structural.composite
 class Developer : Employee {
     private var name: String? = null
     private var empID: Long = 0
-    private var position: String? = null
+    private var position: String? = "Developer"
 
-    override fun printEmployee() {}
+    override fun printEmployee() {
+        println(position)
+    }
 
     fun getName(): String? {
         return name

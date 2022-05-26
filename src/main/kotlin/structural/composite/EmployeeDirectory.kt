@@ -5,11 +5,18 @@ class EmployeeDirectory : Employee {
 
     fun addEmployee(employee: Employee) {
         employeeList.add(employee)
+        println("Employee added")
     }
 
     fun removeEmployee(employee: Employee) {
         employeeList.remove(employee)
     }
 
-    override fun printEmployee() {}
+    fun totalEmployee() : Int {
+        return employeeList.size
+    }
+
+    override fun printEmployee() {
+        employeeList.forEach(Employee::printEmployee)
+    }
 }

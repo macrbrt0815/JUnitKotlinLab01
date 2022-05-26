@@ -1,8 +1,7 @@
 package creational.abstractfactory
 
 class JollibeePromo : CompanyPromo {
-    override fun startPromo() {}
-    override fun endPromo() {}
-    override fun addProponents() {}
-    override fun setKeyPoints() {}
+    override fun companyName(): String {
+        return "Jollibee"
+    }
 }
