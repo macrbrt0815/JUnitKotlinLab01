@@ -45,7 +45,7 @@ class TestComposite {
     }
 
     @Test
-    fun testEmployeeDirectoryCount001(){
+    fun testEmployeeDirectoryCount001() {
         employeeDirectory.addEmployee(developer1)
         employeeDirectory.addEmployee(developer2)
 
@@ -53,7 +53,7 @@ class TestComposite {
     }
 
     @Test
-    fun testEmployeeDirectoryCount002(){
+    fun testEmployeeDirectoryCount002() {
         employeeDirectory.addEmployee(developer1)
         employeeDirectory.addEmployee(developer2)
 
@@ -61,35 +61,35 @@ class TestComposite {
     }
 
     @Test
-    fun testSupervisorDirectoryCount001(){
+    fun testSupervisorDirectoryCount001() {
         supervisorDirectory.addEmployee(supervisor)
 
         assertEquals(1, supervisorDirectory.totalEmployee())
     }
 
     @Test
-    fun testSupervisorDirectoryCount002(){
+    fun testSupervisorDirectoryCount002() {
         supervisorDirectory.addEmployee(supervisor)
 
         assertNotEquals(0, supervisorDirectory.totalEmployee())
     }
 
     @Test
-    fun testManagerDirectoryCount001(){
+    fun testManagerDirectoryCount001() {
         managerDirectory.addEmployee(manager)
 
         assertEquals(1, managerDirectory.totalEmployee())
     }
 
     @Test
-    fun testManagerDirectoryCount002(){
+    fun testManagerDirectoryCount002() {
         managerDirectory.addEmployee(manager)
 
         assertNotEquals(0, managerDirectory.totalEmployee())
     }
 
     @Test
-    fun testCompanyDirectoryCount001(){
+    fun testCompanyDirectoryCount001() {
         companyDirectory.addEmployee(employeeDirectory)
         companyDirectory.addEmployee(supervisorDirectory)
         companyDirectory.addEmployee(managerDirectory)
@@ -98,7 +98,7 @@ class TestComposite {
     }
 
     @Test
-    fun testCompanyDirectoryCount002(){
+    fun testCompanyDirectoryCount002() {
         companyDirectory.addEmployee(employeeDirectory)
         companyDirectory.addEmployee(supervisorDirectory)
         companyDirectory.addEmployee(managerDirectory)

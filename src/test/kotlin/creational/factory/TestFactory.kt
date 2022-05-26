@@ -7,19 +7,18 @@ class TestFactory {
     private val robotFactory = RobotFactory()
 
     @Test
-    fun whenGetRobotIsNull(){
-        val result = robotFactory.getRobot("")
-        Assertions.assertNull(result)
+    fun whenGetRobotIsNull() {
+        Assertions.assertNull(robotFactory.getRobot(""))
     }
 
     @Test
-    fun whenGetRobotIsNotNull(){
+    fun whenGetRobotIsNotNull() {
         val result = robotFactory.getRobot("door")
         Assertions.assertNotNull(result)
     }
 
     @Test
-    fun whenGetRobotIsNotInList(){
+    fun whenGetRobotIsNotInList() {
         val result = robotFactory.getRobot("rand")
         Assertions.assertNull(result)
     }
