@@ -1,9 +1,9 @@
 package behavioral.strategy
 
-class Context(strategy: Strategy) {
+class Context {
     private val strategy: Strategy
 
-    init {
+    constructor(strategy: Strategy) {
         this.strategy = strategy
     }
 
