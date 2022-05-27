@@ -1,8 +1,8 @@
 package structural.decorator
 
-open class CarDecorator(protected val car: Car) : Car{
+open class CarDecorator(private val car: Car) : Car{
 
-    override fun addFeature() {
-        this.car.addFeature()
+    override fun addFeature(): String {
+        return this.car.addFeature()
     }
 }

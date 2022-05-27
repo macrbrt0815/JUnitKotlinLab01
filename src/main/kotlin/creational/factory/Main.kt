@@ -4,5 +4,5 @@ fun main(){
     var robotFactory = RobotFactory();
 
     var robot: Robot? = robotFactory.getRobot("frame");
-    robot?.doTask()
+    robot?.connect()
 }

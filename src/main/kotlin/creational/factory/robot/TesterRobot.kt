@@ -3,8 +3,9 @@ package creational.factory.robot
 import creational.factory.Robot
 
 class TesterRobot : Robot() {
-    override fun connect() {
-        TODO("Not yet implemented")
+    override fun connect(): String {
+        println("Tester connected")
+        return "Tester connected"
     }
 
     override fun disconnect() {
