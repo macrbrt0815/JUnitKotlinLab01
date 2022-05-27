@@ -18,113 +18,112 @@ class TestAbstractFactory {
 
 
     @Test
-    fun testJollibeePromoType001() {
+    fun testJollibeePromoCorrectInstance() {
         assertTrue(jollibeePromo is CompanyPromo)
     }
 
     @Test
-    fun testJollibeePromoType002() {
+    fun testJollibeePromoIncorrectInstance() {
         assertFalse(jollibeePromo is Promo)
     }
 
     @Test
-    fun testJollibeePromo001() {
+    fun testJollibeePromoExpectedName() {
         assertEquals("Jollibee", jollibeePromo?.companyName())
     }
 
     @Test
-    fun testJollibeePromo002() {
+    fun testJollibeePromoUnexpectedName() {
         assertNotEquals("McDonalds", jollibeePromo?.companyName())
     }
 
     @Test
-    fun testMcDonaldsPromType001() {
+    fun testMcDonaldsPromoCorrectInstance() {
         assertTrue(mcDonaldsPromo is CompanyPromo)
     }
 
     @Test
-    fun testMcDonaldsPromoType002() {
+    fun testMcDonaldsPromoTypeIncorrectInstance() {
         assertFalse(mcDonaldsPromo is Promo)
     }
 
     @Test
-    fun testMcDonaldsPromo001() {
+    fun testMcDonaldsPromoExpectedName() {
         assertEquals("McDonalds", mcDonaldsPromo?.companyName())
     }
 
     @Test
-    fun testMcDonaldsPromo002() {
+    fun testMcDonaldsPromoUnexpectedName() {
         assertNotEquals("Jollibee", mcDonaldsPromo?.companyName())
     }
 
     @Test
-    fun testNullCompany001() {
+    fun testNullCompanyName() {
         assertNull(nullCompanyPromo?.companyName())
     }
 
     @Test
-    fun testPromoBundleType001() {
+    fun testPromoBundleTypeCorrectInstance() {
         assertTrue(promoBundle is Promo)
     }
 
     @Test
-    fun testPromoBundleType002() {
+    fun testPromoBundleIncorrectInstance() {
         assertFalse(promoBundle is CompanyPromo)
     }
 
     @Test
-    fun testPromoBundle001(){
+    fun testPromoBundleCExpectedName(){
         assertEquals("Bundle", promoBundle?.promo())
     }
 
     @Test
-    fun testPromoBundle002(){
+    fun testPromoBundleUnexpectedName(){
         assertNotEquals("Discount", promoBundle?.promo())
     }
 
     @Test
-    fun testPromoDiscountType001() {
+    fun testPromoDiscountCorrectInstance() {
         assertTrue(promoDiscount is Promo)
     }
 
     @Test
-    fun testPromoDiscountType002() {
+    fun testPromoDiscountIncorrectInstance() {
         assertFalse(promoDiscount is CompanyPromo)
     }
 
     @Test
-    fun testPromoDiscount001(){
+    fun testPromoDiscountExpectedName(){
         assertEquals("Discount", promoDiscount?.promo())
     }
 
     @Test
-    fun testPromoDiscount002(){
+    fun testPromoDiscountUnexpectedName(){
         assertNotEquals("Raffle", promoDiscount?.promo())
     }
 
     @Test
-    fun testPromoRaffleType001() {
+    fun testPromoRaffleCorrectInstance() {
         assertTrue(promoRaffle is Promo)
     }
 
     @Test
-    fun testPromoRaffleType002() {
+    fun testPromoRaffleIncorrectInstance() {
         assertFalse(promoRaffle is CompanyPromo)
     }
 
     @Test
-    fun testPromoRaffle001(){
+    fun testPromoRaffleExpectedName(){
         assertEquals("Raffle", promoRaffle?.promo())
     }
 
     @Test
-    fun testPromoRaffle002(){
+    fun testPromoRaffleUnexpectedName(){
         assertNotEquals("Bundle", promoRaffle?.promo())
     }
 
     @Test
-    fun testNullPromo001() {
+    fun testNullPromo() {
         assertNull(nullPromo?.promo())
     }
-
 }

@@ -10,37 +10,37 @@ class TestStrategy {
     val strategyTestMultiply = OperationMultiply()
 
     @Test
-    fun testOperationAdd001() {
+    fun testOperationAddExpectedResult() {
         val expected = 4
         assertEquals(expected, strategyTestAdd.doOperation(2, 2))
     }
 
     @Test
-    fun testOperationAdd002() {
+    fun testOperationAddUnexpectedResult() {
         val expected = 4
         assertNotEquals((expected + 1), strategyTestAdd.doOperation(2, 2))
     }
 
     @Test
-    fun testOperationSubtract001() {
+    fun testOperationSubtractExpectedResult() {
         val expected = 4
         assertEquals(expected, strategyTestSubtract.doOperation(6, 2))
     }
 
     @Test
-    fun testOperationSubtract002() {
+    fun testOperationSubtractUnexpectedResult() {
         val expected = 4
         assertNotEquals((expected + 1), strategyTestSubtract.doOperation(6, 2))
     }
 
     @Test
-    fun testOperationMultiply001() {
+    fun testOperationMultiplyExpectedResult() {
         val expected = 4
         assertEquals(expected, strategyTestMultiply.doOperation(2, 2))
     }
 
     @Test
-    fun testOperationMultiply002() {
+    fun testOperationMultiplyUnexpectedResult() {
         val expected = 4
         assertNotEquals((expected + 1), strategyTestMultiply.doOperation(2, 2))
     }

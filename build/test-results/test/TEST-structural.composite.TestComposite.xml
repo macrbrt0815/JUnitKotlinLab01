@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="structural.composite.TestComposite" tests="14" skipped="0" failures="0" errors="0" timestamp="2022-05-27T17:27:05" hostname="GFI05286.local" time="0.047">
+  <properties/>
+  <testcase name="testCompanyDirectoryUnexpectedCount()" classname="structural.composite.TestComposite" time="0.022"/>
+  <testcase name="testManagerDirectoryCorrectInstance()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testSupervisorDirectoryCorrectInstance()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testManagerDirectoryExpectedCount()" classname="structural.composite.TestComposite" time="0.002"/>
+  <testcase name="testSupervisorDirectoryExpectedCount()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testEmployeeDirectoryCorrectInstance()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testEmployeeDirectoryExpectedCount()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testManagerDirectoryUnexpectedCount()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testCompanyDirectoryExpectedCount()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testManagerDirectoryIncorrectInstance()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testSupervisorDirectoryIncorrectInstance()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testSupervisorDirectoryUnexpectedCount()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testEmployeeDirectoryIncorrectInstance()" classname="structural.composite.TestComposite" time="0.001"/>
+  <testcase name="testEmployeeDirectoryUnexpectedCount()" classname="structural.composite.TestComposite" time="0.002"/>
+  <system-out><![CDATA[Employee added
+Employee added
+Employee added
+Employee added
+Employee added
+Employee added
+Employee added
+Employee added
+Employee added
+Employee added
+Employee added
+Employee added
+Employee added
+Employee added
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

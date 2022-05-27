@@ -15,37 +15,37 @@ class TestComposite {
     val companyDirectory = EmployeeDirectory()
 
     @Test
-    fun testEmployeeDirectoryType001() {
+    fun testEmployeeDirectoryCorrectInstance() {
         assertTrue(employeeDirectory is Employee)
     }
 
     @Test
-    fun testEmployeeDirectoryType002() {
+    fun testEmployeeDirectoryIncorrectInstance() {
         assertFalse(employeeDirectory !is Employee)
     }
 
     @Test
-    fun testSupervisorDirectoryType001() {
+    fun testSupervisorDirectoryCorrectInstance() {
         assertTrue(supervisorDirectory is Employee)
     }
 
     @Test
-    fun testSupervisorDirectoryType002() {
+    fun testSupervisorDirectoryIncorrectInstance() {
         assertFalse(supervisorDirectory !is Employee)
     }
 
     @Test
-    fun testManagerDirectoryType001() {
+    fun testManagerDirectoryCorrectInstance() {
         assertTrue(managerDirectory is Employee)
     }
 
     @Test
-    fun testManagerDirectoryType002() {
+    fun testManagerDirectoryIncorrectInstance() {
         assertFalse(managerDirectory !is Employee)
     }
 
     @Test
-    fun testEmployeeDirectoryCount001() {
+    fun testEmployeeDirectoryExpectedCount() {
         employeeDirectory.addEmployee(developer1)
         employeeDirectory.addEmployee(developer2)
 
@@ -53,7 +53,7 @@ class TestComposite {
     }
 
     @Test
-    fun testEmployeeDirectoryCount002() {
+    fun testEmployeeDirectoryUnexpectedCount() {
         employeeDirectory.addEmployee(developer1)
         employeeDirectory.addEmployee(developer2)
 
@@ -61,35 +61,35 @@ class TestComposite {
     }
 
     @Test
-    fun testSupervisorDirectoryCount001() {
+    fun testSupervisorDirectoryExpectedCount() {
         supervisorDirectory.addEmployee(supervisor)
 
         assertEquals(1, supervisorDirectory.totalEmployee())
     }
 
     @Test
-    fun testSupervisorDirectoryCount002() {
+    fun testSupervisorDirectoryUnexpectedCount() {
         supervisorDirectory.addEmployee(supervisor)
 
         assertNotEquals(0, supervisorDirectory.totalEmployee())
     }
 
     @Test
-    fun testManagerDirectoryCount001() {
+    fun testManagerDirectoryExpectedCount() {
         managerDirectory.addEmployee(manager)
 
         assertEquals(1, managerDirectory.totalEmployee())
     }
 
     @Test
-    fun testManagerDirectoryCount002() {
+    fun testManagerDirectoryUnexpectedCount() {
         managerDirectory.addEmployee(manager)
 
         assertNotEquals(0, managerDirectory.totalEmployee())
     }
 
     @Test
-    fun testCompanyDirectoryCount001() {
+    fun testCompanyDirectoryExpectedCount() {
         companyDirectory.addEmployee(employeeDirectory)
         companyDirectory.addEmployee(supervisorDirectory)
         companyDirectory.addEmployee(managerDirectory)
@@ -98,7 +98,7 @@ class TestComposite {
     }
 
     @Test
-    fun testCompanyDirectoryCount002() {
+    fun testCompanyDirectoryUnexpectedCount() {
         companyDirectory.addEmployee(employeeDirectory)
         companyDirectory.addEmployee(supervisorDirectory)
         companyDirectory.addEmployee(managerDirectory)
