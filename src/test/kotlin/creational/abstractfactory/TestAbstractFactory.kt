@@ -14,44 +14,46 @@ class TestAbstractFactory {
     val promoDiscount = PromoFactory().getPromo("discount")
     val promoBundle = PromoFactory().getPromo("bundle")
     val promoRaffle = PromoFactory().getPromo("raffle")
+    val nullPromo = PromoFactory().getPromo("")
+
 
     @Test
-    fun testJollibeePromo001() {
+    fun testJollibeePromoType001() {
         assertTrue(jollibeePromo is CompanyPromo)
     }
 
     @Test
-    fun testJollibeePromo002() {
+    fun testJollibeePromoType002() {
         assertFalse(jollibeePromo is Promo)
     }
 
     @Test
-    fun testJollibeePromo003() {
+    fun testJollibeePromo001() {
         assertEquals("Jollibee", jollibeePromo?.companyName())
     }
 
     @Test
-    fun testJollibeePromo004() {
+    fun testJollibeePromo002() {
         assertNotEquals("McDonalds", jollibeePromo?.companyName())
     }
 
     @Test
-    fun testMcDonaldsPromo001() {
+    fun testMcDonaldsPromType001() {
         assertTrue(mcDonaldsPromo is CompanyPromo)
     }
 
     @Test
-    fun testMcDonaldsPromo002() {
+    fun testMcDonaldsPromoType002() {
         assertFalse(mcDonaldsPromo is Promo)
     }
 
     @Test
-    fun testMcDonaldsPromo003() {
+    fun testMcDonaldsPromo001() {
         assertEquals("McDonalds", mcDonaldsPromo?.companyName())
     }
 
     @Test
-    fun testMcDonaldsPromo004() {
+    fun testMcDonaldsPromo002() {
         assertNotEquals("Jollibee", mcDonaldsPromo?.companyName())
     }
 
@@ -61,63 +63,68 @@ class TestAbstractFactory {
     }
 
     @Test
-    fun testPromoBundle001() {
+    fun testPromoBundleType001() {
         assertTrue(promoBundle is Promo)
     }
 
     @Test
-    fun testPromoBundle002() {
+    fun testPromoBundleType002() {
         assertFalse(promoBundle is CompanyPromo)
     }
 
     @Test
-    fun testPromoBundle003(){
+    fun testPromoBundle001(){
         assertEquals("Bundle", promoBundle?.promo())
     }
 
     @Test
-    fun testPromoBundle004(){
+    fun testPromoBundle002(){
         assertNotEquals("Discount", promoBundle?.promo())
     }
 
     @Test
-    fun testPromoDiscount001() {
+    fun testPromoDiscountType001() {
         assertTrue(promoDiscount is Promo)
     }
 
     @Test
-    fun testPromoDiscount002() {
+    fun testPromoDiscountType002() {
         assertFalse(promoDiscount is CompanyPromo)
     }
 
     @Test
-    fun testPromoDiscount003(){
+    fun testPromoDiscount001(){
         assertEquals("Discount", promoDiscount?.promo())
     }
 
     @Test
-    fun testPromoDiscount004(){
+    fun testPromoDiscount002(){
         assertNotEquals("Raffle", promoDiscount?.promo())
     }
 
     @Test
-    fun testPromoRaffle001() {
+    fun testPromoRaffleType001() {
         assertTrue(promoRaffle is Promo)
     }
 
     @Test
-    fun testPromoRaffle002() {
+    fun testPromoRaffleType002() {
         assertFalse(promoRaffle is CompanyPromo)
     }
 
     @Test
-    fun testPromoRaffle003(){
+    fun testPromoRaffle001(){
         assertEquals("Raffle", promoRaffle?.promo())
     }
 
     @Test
-    fun testPromoRaffle004(){
+    fun testPromoRaffle002(){
         assertNotEquals("Bundle", promoRaffle?.promo())
+    }
+
+    @Test
+    fun testNullPromo001() {
+        assertNull(nullPromo?.promo())
     }
 
 }

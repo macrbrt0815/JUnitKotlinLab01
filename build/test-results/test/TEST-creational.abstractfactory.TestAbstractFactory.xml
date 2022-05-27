@@ -1,27 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="creational.abstractfactory.TestAbstractFactory" tests="21" skipped="0" failures="0" errors="0" timestamp="2022-05-26T13:26:45" hostname="GFI05286.local" time="0.048">
+<testsuite name="creational.abstractfactory.TestAbstractFactory" tests="22" skipped="0" failures="0" errors="0" timestamp="2022-05-26T15:38:38" hostname="GFI05286.local" time="0.05">
   <properties/>
-  <testcase name="testPromoBundle001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.016"/>
+  <testcase name="testPromoBundle001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.017"/>
   <testcase name="testPromoBundle002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
-  <testcase name="testPromoBundle003()" classname="creational.abstractfactory.TestAbstractFactory" time="0.002"/>
-  <testcase name="testPromoBundle004()" classname="creational.abstractfactory.TestAbstractFactory" time="0.002"/>
   <testcase name="testPromoDiscount001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
-  <testcase name="testPromoDiscount002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.0"/>
-  <testcase name="testPromoDiscount003()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
-  <testcase name="testPromoDiscount004()" classname="creational.abstractfactory.TestAbstractFactory" time="0.002"/>
+  <testcase name="testPromoDiscount002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
+  <testcase name="testPromoBundleType001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.002"/>
+  <testcase name="testPromoBundleType002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.002"/>
+  <testcase name="testPromoDiscountType001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
+  <testcase name="testPromoDiscountType002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
+  <testcase name="testJollibeePromoType001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.0"/>
+  <testcase name="testJollibeePromoType002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
   <testcase name="testJollibeePromo001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
   <testcase name="testJollibeePromo002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
-  <testcase name="testJollibeePromo003()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
-  <testcase name="testJollibeePromo004()" classname="creational.abstractfactory.TestAbstractFactory" time="0.0"/>
   <testcase name="testMcDonaldsPromo001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
   <testcase name="testMcDonaldsPromo002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
-  <testcase name="testMcDonaldsPromo003()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
-  <testcase name="testMcDonaldsPromo004()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
+  <testcase name="testMcDonaldsPromType001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.002"/>
+  <testcase name="testNullPromo001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
   <testcase name="testPromoRaffle001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
   <testcase name="testPromoRaffle002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.0"/>
-  <testcase name="testPromoRaffle003()" classname="creational.abstractfactory.TestAbstractFactory" time="0.0"/>
-  <testcase name="testPromoRaffle004()" classname="creational.abstractfactory.TestAbstractFactory" time="0.0"/>
-  <testcase name="testNullCompany001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.002"/>
+  <testcase name="testNullCompany001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
+  <testcase name="testPromoRaffleType001()" classname="creational.abstractfactory.TestAbstractFactory" time="0.001"/>
+  <testcase name="testPromoRaffleType002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.0"/>
+  <testcase name="testMcDonaldsPromoType002()" classname="creational.abstractfactory.TestAbstractFactory" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,5 +1,5 @@
 package creational.abstractfactory
 
 interface CompanyPromo {
-    fun companyName() : String
+    fun companyName(): String
 }
