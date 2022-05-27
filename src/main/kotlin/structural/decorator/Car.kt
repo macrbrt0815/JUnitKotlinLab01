@@ -1,5 +1,5 @@
 package structural.decorator
 
 interface Car {
-    fun addFeature()
+    fun addFeature(): String
 }

@@ -3,8 +3,9 @@ package creational.factory.robot
 import creational.factory.Robot
 
 class DoorBuilderRobot : Robot() {
-    override fun connect() {
-        TODO("Not yet implemented")
+    override fun connect(): String {
+        println("Door connected")
+        return "Door connected"
     }
 
     override fun disconnect() {

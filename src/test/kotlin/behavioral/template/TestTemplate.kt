@@ -1,30 +1,58 @@
 package behavioral.template
 
-import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 
 class TestTemplate {
+    private val cricket: Game = Cricket()
+    private val football: Game = Football()
+
     @Test
-    fun testTemplateCricketWorking() {
-        val cricket: Game = Cricket()
-        Assertions.assertNotNull(cricket.play())
+    fun testTemplateCricketNotNull() {
+        assertNotNull(cricket.play())
     }
 
     @Test
-    fun testTemplateFootballWorking() {
-        val football: Game = Football()
-        Assertions.assertNotNull(football.play())
+    fun testTemplateFootballNotNull() {
+        assertNotNull(football.play())
     }
 
     @Test
     fun testCricketInitializeMessage(){
-        val cricket = Cricket()
-        Assertions.assertEquals("Cricket game initialized! Start playing", cricket.initialize())
+        assertEquals("Cricket game initialized! Start playing", cricket.initialize())
     }
 
     @Test
     fun testCricketInitializeWrongMessage(){
-        val cricket = Cricket()
-        Assertions.assertNotEquals("Football game initialized! Start playing", cricket.initialize())
+        assertNotEquals("Football game initialized! Start playing", cricket.initialize())
+    }
+
+    @Test
+    fun testCricketGameStarted(){
+        assertEquals("Cricket game started!", cricket.startPlay())
+    }
+
+    @Test
+    fun testCricketGameStartedWrongMessage(){
+        assertNotEquals("Football game started!", cricket.startPlay())
+    }
+
+    @Test
+    fun testFootballGameStarted(){
+        assertEquals("Football game started!", football.startPlay())
+    }
+
+    @Test
+    fun testFootballGameStartedWrongMessage(){
+        assertNotEquals("Cricket game started!", football.startPlay())
+    }
+    @Test
+    fun testFootballInitializeMessage(){
+        assertEquals("Football game initialized! Start playing", football.initialize())
+    }
+
+    @Test
+    fun testFootballInitializeWrongMessage(){
+        assertNotEquals("Cricket game initialized! Start playing", football.initialize())
     }
 }

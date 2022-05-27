@@ -6,11 +6,13 @@ class Football : Game(){
         return "Football game initialized! Start playing"
     }
 
-    override fun startPlay() {
-        println("Football game started! Enjoy the game!")
+    override fun startPlay(): String {
+        println("Football game started!")
+        return "Football game started!"
     }
 
-    override fun endPlay() {
+    override fun endPlay(): String {
         println("Football game finished!")
+        return "Football game finished!"
     }
 }
