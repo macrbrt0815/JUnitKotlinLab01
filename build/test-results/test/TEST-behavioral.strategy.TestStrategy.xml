@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="behavioral.strategy.TestStrategy" tests="6" skipped="0" failures="0" errors="0" timestamp="2022-05-28T07:37:46" hostname="GFI05286.local" time="0.033">
+  <properties/>
+  <testcase name="testOperationMultiplyExpectedResult()" classname="behavioral.strategy.TestStrategy" time="0.022"/>
+  <testcase name="testOperationSubtractExpectedResult()" classname="behavioral.strategy.TestStrategy" time="0.002"/>
+  <testcase name="testOperationMultiplyUnexpectedResult()" classname="behavioral.strategy.TestStrategy" time="0.001"/>
+  <testcase name="testOperationAddUnexpectedResult()" classname="behavioral.strategy.TestStrategy" time="0.002"/>
+  <testcase name="testOperationAddExpectedResult()" classname="behavioral.strategy.TestStrategy" time="0.001"/>
+  <testcase name="testOperationSubtractUnexpectedResult()" classname="behavioral.strategy.TestStrategy" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

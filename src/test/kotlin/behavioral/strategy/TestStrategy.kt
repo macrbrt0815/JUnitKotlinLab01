@@ -5,43 +5,47 @@ import org.junit.jupiter.api.Assertions.*
 
 class TestStrategy {
 
-    val strategyTestAdd = OperationAdd()
-    val strategyTestSubtract = OperationSubtract()
-    val strategyTestMultiply = OperationMultiply()
+    lateinit var context : Context
 
     @Test
     fun testOperationAddExpectedResult() {
+        context = Context(OperationAdd())
         val expected = 4
-        assertEquals(expected, strategyTestAdd.doOperation(2, 2))
+        assertEquals(expected, context.executeStrategy(2, 2))
     }
 
     @Test
     fun testOperationAddUnexpectedResult() {
+        context = Context(OperationAdd())
         val expected = 4
-        assertNotEquals((expected + 1), strategyTestAdd.doOperation(2, 2))
+        assertNotEquals((expected + 1), context.executeStrategy(2, 2))
     }
 
     @Test
     fun testOperationSubtractExpectedResult() {
+        context = Context(OperationSubtract())
         val expected = 4
-        assertEquals(expected, strategyTestSubtract.doOperation(6, 2))
+        assertEquals(expected, context.executeStrategy(6, 2))
     }
 
     @Test
     fun testOperationSubtractUnexpectedResult() {
+        context = Context(OperationSubtract())
         val expected = 4
-        assertNotEquals((expected + 1), strategyTestSubtract.doOperation(6, 2))
+        assertNotEquals((expected + 1), context.executeStrategy(6, 2))
     }
 
     @Test
     fun testOperationMultiplyExpectedResult() {
+        context = Context(OperationMultiply())
         val expected = 4
-        assertEquals(expected, strategyTestMultiply.doOperation(2, 2))
+        assertEquals(expected, context.executeStrategy(2, 2))
     }
 
     @Test
     fun testOperationMultiplyUnexpectedResult() {
+        context = Context(OperationMultiply())
         val expected = 4
-        assertNotEquals((expected + 1), strategyTestMultiply.doOperation(2, 2))
+        assertNotEquals((expected + 1), context.executeStrategy(2, 2))
     }
 }
